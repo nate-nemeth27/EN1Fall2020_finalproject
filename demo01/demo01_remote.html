@@ -66,7 +66,7 @@
   }
   .button_container {
 	padding-top: 15px;
-	text-align:	center;
+	float:	center;
 	width:	100px;
 }
   </style>
@@ -85,17 +85,12 @@
   <h2>Remote Interface</h2>
   </div>
   <div class='button_container'>
-    <button class="button green_button" cloud_action='update' cloud_name='command'>Forward</button>
+    <input type='button' value='My button'>
   </div>
-  <div class='button_container'>
-    <button class="button red_button" cloud_action='update' cloud_name='command'>Backward</button>
-  </div>
-  <div class='button_container'>
-    <button class="button black_button" cloud_action='update' cloud_name='command'>Left</button>
-  </div>
-  <div class='button_container'>
-    <button class="button blue_button" cloud_action='update' cloud_name='command'>Right</button>
-  </div>
+  <button class="button green_button" cloud_action='update' cloud_name='command'>Forward</button>
+  <button class="button red_button" cloud_action='update' cloud_name='command'>Backward</button>
+  <button class="button black_button" cloud_action='update' cloud_name='command'>Left</button>
+  <button class="button blue_button" cloud_action='update' cloud_name='command'>Right</button>
 
   <h2>Demo 01 Quick Links:</h2>
   <p>
