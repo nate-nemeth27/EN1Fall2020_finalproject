@@ -5,11 +5,15 @@
     <script src="../src/secret.js" charset="utf-8"></script>
     <script src="../src/cloud.js" charset="utf-8"></script>
     <link rel="stylesheet" href="../src/style.css" />
-    <input type='button' class='red_button' value='My Red Button'>
+    <input type='button' class='button' value='Button'>
   <style>
+  body {
+  background-color: lightblue;
+  }
+  <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
   .button {
       background-color: none;
-      border: 2px solid black;
+      border: none;
       color: white;
       padding: 15px 32px;
       text-align: center;
@@ -22,8 +26,9 @@
   }
   .red_button {
     background-color: red;
+    border: 2px solid red;
     color: white;
-    border-radius: 50%;
+    border-radius: 12px;
   }
   .red_button:hover {
     background-color: white;
@@ -31,8 +36,9 @@
   }
   .green_button {
     background-color: green;
+    border: 2px solid green;
     color: white;
-    border-radius: 50%;
+    border-radius: 12px;
   }
   .green_button:hover {
     background-color: white;
@@ -40,8 +46,9 @@
   }
   .blue_button {
     background-color: blue;
+    border: 2px solid blue;
     color: white;
-    border-radius: 50%;
+    border-radius: 12px;
   } 
   .blue_button:hover {
     background-color: white;
@@ -49,13 +56,19 @@
   }
   .black_button {
     background-color: black;
+    border: 2px solid black;
     color: white;
-    border-radius: 50%;
+    border-radius: 12px;
   }  
   .black_button:hover {
     background-color: white;
     color: black;
   }
+  .button_container {
+	padding-top: 15px;
+	text-align:	center;
+	width:	100px;
+}
   </style>
   </head>
 <body>
@@ -70,11 +83,19 @@
   <p>This demo shows simple buttons that activate code within SPIKE Prime Slots.</p>
 
   <h2>Remote Interface</h2>
-
-  <button class="button green_button" cloud_action='update' cloud_name='command'>Forward</button>
-  <button class="button red_button" cloud_action='update' cloud_name='command'>Backward</button>
-  <button class="button black_button" cloud_action='update' cloud_name='command'>Left</button>
-  <button class="button blue_button" cloud_action='update' cloud_name='command'>Right</button>
+  </div>
+  <div class='button_container'>
+    <button class="button green_button" cloud_action='update' cloud_name='command'>Forward</button>
+  </div>
+  <div class='button_container'>
+    <button class="button red_button" cloud_action='update' cloud_name='command'>Backward</button>
+  </div>
+  <div class='button_container'>
+    <button class="button black_button" cloud_action='update' cloud_name='command'>Left</button>
+  </div>
+  <div class='button_container'>
+    <button class="button blue_button" cloud_action='update' cloud_name='command'>Right</button>
+  </div>
 
   <h2>Demo 01 Quick Links:</h2>
   <p>
