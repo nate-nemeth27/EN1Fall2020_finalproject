@@ -11,10 +11,8 @@
   }
   div {
     border: 1px white;
-    padding-top: 10px;
-    padding-right: 100px;
-    padding-bottom: 10px;
-    padding-left: 100px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
   .button {
       background-color: none;
@@ -83,12 +81,22 @@
   <p>This demo shows simple buttons that activate code within SPIKE Prime Slots.</p>
 
   <h2>Remote Interface</h2>
-  <div><button class="button green_button" cloud_action='update' cloud_name='command'>Forward</button></div>
   <div>
+    padding-left: 250px;
+    <button class="button green_button" cloud_action='update' cloud_name='command'>Forward</button>
+    padding-right: 250px;
+  </div>
+  <div>
+    padding-left: 250px;
     <button class="button black_button" cloud_action='update' cloud_name='command'>Left</button>
     <button class="button blue_button" cloud_action='update' cloud_name='command'>Right</button>
+    padding-right: 250px;
   </div>
-  <div><button class="button red_button" cloud_action='update' cloud_name='command'>Backward</button></div>
+  <div>
+    padding-left: 250px;
+    <button class="button red_button" cloud_action='update' cloud_name='command'>Backward</button>
+    padding-right: 250px;
+  </div>
 
   <h2>Demo 01 Quick Links:</h2>
   <p>
