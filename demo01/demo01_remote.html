@@ -5,6 +5,58 @@
     <script src="../src/secret.js" charset="utf-8"></script>
     <script src="../src/cloud.js" charset="utf-8"></script>
     <link rel="stylesheet" href="../src/style.css" />
+    <input type='button' class='red_button' value='My Red Button'>
+  <style>
+  .button {
+      background-color: none;
+      border: 2px solid black;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition-duration: .4s;
+  }
+  .red_button {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+  }
+  .red_button:hover {
+    background-color: white;
+    color: black;
+  }
+  .green_button {
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+  }
+  .green_button:hover {
+    background-color: white;
+    color: black;
+  }
+  .blue_button {
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+  } 
+  .blue_button:hover {
+    background-color: white;
+    color: black;
+  }
+  .black_button {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+  }  
+  .black_button:hover {
+    background-color: white;
+    color: black;
+  }
+  </style>
   </head>
 <body>
 
@@ -19,10 +71,10 @@
 
   <h2>Remote Interface</h2>
 
-  <button cloud_action='update' cloud_name='command'>Up</button>
-  <button cloud_action='update' cloud_name='command'>Down</button>
-  <button cloud_action='update' cloud_name='command'>Left</button>
-  <button cloud_action='update' cloud_name='command'>Right</button>
+  <button class="button green_button" cloud_action='update' cloud_name='command'>Forward</button>
+  <button class="button red_button" cloud_action='update' cloud_name='command'>Backward</button>
+  <button class="button black_button" cloud_action='update' cloud_name='command'>Left</button>
+  <button class="button blue_button" cloud_action='update' cloud_name='command'>Right</button>
 
   <h2>Demo 01 Quick Links:</h2>
   <p>
